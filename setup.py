@@ -23,7 +23,7 @@ def read(*names, **kwargs):
 
 setup(
     name='sanic_token_auth',
-    version='0.1.0',
+    version='0.1.1',
     license='MIT license',
     description='A simple token-based auth plugin for Sanic',
     # long_description='%s\n%s' % (
