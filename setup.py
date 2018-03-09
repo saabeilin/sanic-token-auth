@@ -21,13 +21,6 @@ def read(*names, **kwargs):
     ).read()
 
 
-# Does not work with tox:
-# install_requires = [
-#     l for l in open(join(dirname(__file__), 'requirements.txt')).read().split('\n')
-#     if l and not l.startswith('#')
-# ]
-
-
 setup(
     name='sanic_token_auth',
     version='0.1.0',
