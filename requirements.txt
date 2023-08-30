@@ -1,0 +1,7 @@
+sanic
+sanic-testing
+pytest
+mypy
+isort
+black
+flake8

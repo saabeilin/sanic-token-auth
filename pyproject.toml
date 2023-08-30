@@ -1,0 +1,23 @@
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "-v --ff"
+testpaths = [
+    "tests",
+]
+
+[tool.black]
+target-version = ['py311']
+
+[tool.isort]
+profile = "black"
+src_paths = ["src", "tests"]
+py_version = 311
+
+[tool.mypy]
+show_error_context = true
+ignore_missing_imports = true
+disallow_untyped_calls = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+disallow_incomplete_defs = true
+python_version = "3.11"
