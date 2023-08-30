@@ -24,7 +24,6 @@ class SanicTokenAuth:
 
     async def _is_authenticated(self, request):
         token = request.headers.get(self.header, None) if self.header else request.token
-        print(token)
         if self.token_verifier:
             return await self.token_verifier(token)
         return token == self.secret_key
