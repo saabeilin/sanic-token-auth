@@ -10,6 +10,7 @@ from os.path import dirname
 from os.path import join
 from os.path import splitext
 
+import m2r
 from setuptools import setup
 
 
@@ -28,7 +29,7 @@ setup(
     #     re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
     #     re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
     # ),
-    long_description=read("README.md"),
+    long_description=m2r.convert(read("README.md")),
     author="Sergei Beilin",
     author_email="saabeilin@gmail.com",
     url="https://github.com/saabeilin/sanic-token-auth",
